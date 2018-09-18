@@ -1,0 +1,16 @@
+<header>
+  <div class="logo mobile-device">
+    <img src='assets/images/userlist-logo.png'>
+  </div>
+  <div class="username mobile-device">
+    <span>Meeting ID</span>{{VydioClientService.meetingRoom}}</div>
+  <div class="username mobile-device">
+    <span>Total Member</span>({{VydioClientService.users.length}})</div>
+  <div class="username">
+    <span>Username</span>{{VydioClientService.userName}}</div>
+  <div class="logout">
+    <a (click) ="logout()">
+      <img src="assets/images/logout.png" />
+    </a>
+  </div>
+</header>

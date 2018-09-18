@@ -1,0 +1,21 @@
+<div class="blanket" id="blanket" *ngIf="isLoading">
+    <div class="loader">
+        <img class="loader-img" src="../../assets/images/loading.gif" />
+        <div class="loader-text">You are about to enter the meeting room.</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="box-wrapper chat-main-container">
+        <div class="user-list">
+            <app-user-list-header></app-user-list-header>
+            <app-user-list></app-user-list>
+            <app-text-chat-window></app-text-chat-window>
+        </div>
+        <div class="chat">
+            <app-header></app-header>
+            <app-video-chat-window></app-video-chat-window>
+        </div>
+
+    </div>
+</div>

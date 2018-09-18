@@ -1,0 +1,5 @@
+<div  class="user-list-window">
+  <ul>
+    <li *ngFor="let user of VydioClientService.users; let i = index"><span class="name-icon" [style.background]="user.bgColor"> {{ user.firstChar }} </span><span class="titleCase">{{ user.name }}</span></li>
+  </ul>
+</div>
